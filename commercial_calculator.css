@@ -1,0 +1,577 @@
+/* ==========================================================================
+   MIEN NAM GROUP (MNG) - COMMERCIAL VEHICLE CALCULATOR & CASCADER SELECTOR
+   Design System: MNG Solid White, Navy (#1B365D), Accent Red (#C00000)
+   ========================================================================== */
+
+:root {
+  --mng-navy: #1B365D;
+  --mng-navy-dark: #0f223d;
+  --mng-navy-light: #2c4c7c;
+  --mng-red: #C00000;
+  --mng-red-hover: #9e0000;
+  --mng-red-light: #fff0f0;
+  --mng-gold: #D4AF37;
+  --mng-bg-light: #F8FAFC;
+  --mng-card-bg: #FFFFFF;
+  --mng-text-main: #1E293B;
+  --mng-text-muted: #64748B;
+  --mng-border: #E2E8F0;
+  --mng-border-focus: #1B365D;
+  --mng-success: #10B981;
+  --mng-shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.05);
+  --mng-shadow-md: 0 4px 12px rgba(27, 54, 93, 0.08);
+  --mng-shadow-lg: 0 12px 28px rgba(27, 54, 93, 0.12);
+  --mng-radius: 12px;
+  --mng-radius-sm: 8px;
+  --mng-transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Cambria', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+}
+
+body {
+  background-color: var(--mng-bg-light);
+  color: var(--mng-text-main);
+  line-height: 1.6;
+  padding: 24px 16px;
+}
+
+.mng-container {
+  max-width: 1280px;
+  margin: 0 auto;
+}
+
+/* Header Banner */
+.mng-calc-header {
+  background: linear-gradient(135deg, var(--mng-navy) 0%, var(--mng-navy-dark) 100%);
+  color: #FFFFFF;
+  border-radius: var(--mng-radius);
+  padding: 32px 28px;
+  margin-bottom: 28px;
+  box-shadow: var(--mng-shadow-lg);
+  position: relative;
+  overflow: hidden;
+  border-left: 6px solid var(--mng-red);
+}
+
+.mng-calc-header::after {
+  content: '';
+  position: absolute;
+  top: -40px;
+  right: -40px;
+  width: 220px;
+  height: 220px;
+  background: rgba(255, 255, 255, 0.04);
+  border-radius: 50%;
+  pointer-events: none;
+}
+
+.mng-calc-header h1 {
+  font-size: 28px;
+  font-weight: 700;
+  margin-bottom: 8px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.mng-calc-header h1 span.badge {
+  background: var(--mng-red);
+  font-size: 13px;
+  font-weight: 600;
+  padding: 4px 10px;
+  border-radius: 20px;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+}
+
+.mng-calc-header p {
+  font-size: 15px;
+  color: #CBD5E1;
+  max-width: 780px;
+}
+
+/* Main Grid Layout: Cascader & Form (Left) vs Summary Sheet (Right) */
+.mng-calc-layout {
+  display: grid;
+  grid-template-columns: 1.15fr 0.85fr;
+  gap: 28px;
+  align-items: start;
+}
+
+@media (max-width: 1024px) {
+  .mng-calc-layout {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Card Shell */
+.mng-card {
+  background: var(--mng-card-bg);
+  border-radius: var(--mng-radius);
+  border: 1px solid var(--mng-border);
+  box-shadow: var(--mng-shadow-md);
+  padding: 24px;
+  margin-bottom: 24px;
+}
+
+.mng-card-title {
+  font-size: 18px;
+  font-weight: 700;
+  color: var(--mng-navy);
+  margin-bottom: 18px;
+  padding-bottom: 12px;
+  border-bottom: 2px solid #F1F5F9;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.mng-card-title .step-pill {
+  background: var(--mng-navy-light);
+  color: #FFFFFF;
+  font-size: 12px;
+  font-weight: 600;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 8px;
+}
+
+/* ================= Cascader Picker (Bộ chọn 3 cấp) ================= */
+.mng-cascader-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+  margin-bottom: 20px;
+}
+
+@media (max-width: 768px) {
+  .mng-cascader-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.form-group label {
+  font-size: 13.5px;
+  font-weight: 600;
+  color: var(--mng-navy-dark);
+}
+
+.form-group label span.req {
+  color: var(--mng-red);
+}
+
+.form-control, .form-select {
+  width: 100%;
+  padding: 11px 14px;
+  font-size: 14.5px;
+  border: 1.5px solid var(--mng-border);
+  border-radius: var(--mng-radius-sm);
+  background-color: #FAFAFA;
+  color: var(--mng-text-main);
+  transition: var(--mng-transition);
+  outline: none;
+}
+
+.form-control:focus, .form-select:focus {
+  border-color: var(--mng-navy);
+  background-color: #FFFFFF;
+  box-shadow: 0 0 0 3px rgba(27, 54, 93, 0.12);
+}
+
+/* Vehicle Selected Preview Mini-Card */
+.vehicle-preview-box {
+  background: linear-gradient(to right, #F8FAFC, #FFFFFF);
+  border: 1.5px dashed var(--mng-navy-light);
+  border-radius: var(--mng-radius-sm);
+  padding: 16px;
+  display: grid;
+  grid-template-columns: 140px 1fr;
+  gap: 16px;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+@media (max-width: 540px) {
+  .vehicle-preview-box {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+}
+
+.vehicle-thumb {
+  width: 100%;
+  height: 95px;
+  object-fit: cover;
+  border-radius: 6px;
+  background: #EEE;
+}
+
+.vehicle-details h3 {
+  font-size: 17px;
+  font-weight: 700;
+  color: var(--mng-navy);
+  margin-bottom: 4px;
+}
+
+.vehicle-details .spec-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin-bottom: 8px;
+}
+
+.vehicle-details .spec-tags .tag {
+  background: #E2E8F0;
+  color: #334155;
+  font-size: 12px;
+  padding: 2px 8px;
+  border-radius: 4px;
+  font-weight: 500;
+}
+
+.vehicle-details .base-price {
+  font-size: 18px;
+  font-weight: 700;
+  color: var(--mng-red);
+}
+
+/* ================= 63 Tỉnh Thành & Thông số lăn bánh ================= */
+.calc-parameters-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+  margin-bottom: 16px;
+}
+
+@media (max-width: 600px) {
+  .calc-parameters-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Custom Checkbox Pill List */
+.option-checks {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-top: 8px;
+}
+
+.checkbox-pill {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 14px;
+  border: 1.5px solid var(--mng-border);
+  border-radius: var(--mng-radius-sm);
+  cursor: pointer;
+  transition: var(--mng-transition);
+  background: #FFF;
+}
+
+.checkbox-pill:hover {
+  border-color: var(--mng-navy-light);
+  background: #F8FAFC;
+}
+
+.checkbox-pill.active {
+  border-color: var(--mng-navy);
+  background: rgba(27, 54, 93, 0.04);
+}
+
+.checkbox-pill input[type="checkbox"] {
+  width: 18px;
+  height: 18px;
+  accent-color: var(--mng-navy);
+  margin-right: 10px;
+}
+
+.checkbox-pill .pill-label {
+  display: flex;
+  align-items: center;
+  font-size: 13.5px;
+  font-weight: 600;
+  color: var(--mng-navy-dark);
+}
+
+.checkbox-pill .pill-price {
+  font-size: 13.5px;
+  font-weight: 700;
+  color: var(--mng-red);
+}
+
+/* ================= Vay Trả Góp Slider Box ================= */
+.loan-calculator-box {
+  background: #F8FAFC;
+  border: 1px solid var(--mng-border);
+  border-radius: var(--mng-radius-sm);
+  padding: 18px;
+  margin-top: 16px;
+}
+
+.loan-toggle-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 14px;
+}
+
+.loan-toggle-header label {
+  font-weight: 700;
+  color: var(--mng-navy);
+  font-size: 15px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.loan-slider-group {
+  margin-bottom: 14px;
+}
+
+.loan-slider-group .slider-header {
+  display: flex;
+  justify-content: space-between;
+  font-size: 13.5px;
+  font-weight: 600;
+  margin-bottom: 4px;
+}
+
+.loan-slider-group input[type="range"] {
+  width: 100%;
+  accent-color: var(--mng-navy);
+  cursor: pointer;
+}
+
+/* ================= Summary Sheet (Bảng giá chi tiết) ================= */
+.mng-summary-card {
+  position: sticky;
+  top: 24px;
+  background: #FFFFFF;
+  border: 2px solid var(--mng-navy);
+  border-radius: var(--mng-radius);
+  box-shadow: var(--mng-shadow-lg);
+  padding: 24px;
+}
+
+.summary-header {
+  text-align: center;
+  padding-bottom: 16px;
+  border-bottom: 2px dashed var(--mng-border);
+  margin-bottom: 16px;
+}
+
+.summary-header h2 {
+  font-size: 20px;
+  font-weight: 700;
+  color: var(--mng-navy);
+  text-transform: uppercase;
+}
+
+.summary-header .summary-location {
+  font-size: 13.5px;
+  color: var(--mng-text-muted);
+}
+
+/* Cost Breakdown Table */
+.cost-breakdown-list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.cost-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 14px;
+  color: #334155;
+  padding-bottom: 6px;
+  border-bottom: 1px solid #F1F5F9;
+}
+
+.cost-row.main-item {
+  font-weight: 700;
+  color: var(--mng-navy);
+  font-size: 15px;
+}
+
+.cost-row .item-note {
+  font-size: 11.5px;
+  color: var(--mng-text-muted);
+  display: block;
+}
+
+.cost-row .cost-val {
+  font-weight: 600;
+  color: #0F172A;
+  white-space: nowrap;
+}
+
+.cost-row.discount .cost-val {
+  color: var(--mng-success);
+}
+
+/* Total Price Hero Box */
+.total-price-hero {
+  background: linear-gradient(135deg, var(--mng-navy) 0%, var(--mng-navy-dark) 100%);
+  color: #FFFFFF;
+  border-radius: var(--mng-radius-sm);
+  padding: 16px 20px;
+  text-align: center;
+  margin-bottom: 20px;
+  box-shadow: 0 4px 14px rgba(27, 54, 93, 0.25);
+}
+
+.total-price-hero .label {
+  font-size: 13px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  color: #E2E8F0;
+}
+
+.total-price-hero .price-number {
+  font-size: 30px;
+  font-weight: 800;
+  color: #FFFFFF;
+  margin: 4px 0;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.total-price-hero .vat-note {
+  font-size: 11.5px;
+  color: #94A3B8;
+}
+
+/* Loan Summary Breakdown in Sheet */
+.loan-estimate-box {
+  background: var(--mng-red-light);
+  border: 1px dashed var(--mng-red);
+  border-radius: var(--mng-radius-sm);
+  padding: 14px;
+  margin-bottom: 20px;
+}
+
+.loan-estimate-box .loan-title {
+  font-size: 13.5px;
+  font-weight: 700;
+  color: var(--mng-red);
+  margin-bottom: 8px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.loan-grid-res {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 8px;
+}
+
+.loan-res-item {
+  font-size: 12.5px;
+}
+
+.loan-res-item .l-lbl {
+  color: #64748B;
+  display: block;
+}
+
+.loan-res-item .l-val {
+  font-weight: 700;
+  color: var(--mng-navy);
+  font-size: 14px;
+}
+
+/* CTA Action Buttons */
+.cta-actions-group {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.btn-mng-primary {
+  background: var(--mng-red);
+  color: #FFFFFF;
+  border: none;
+  border-radius: var(--mng-radius-sm);
+  padding: 14px;
+  font-size: 15px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: var(--mng-transition);
+  text-align: center;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  box-shadow: 0 4px 10px rgba(192, 0, 0, 0.2);
+}
+
+.btn-mng-primary:hover {
+  background: var(--mng-red-hover);
+  transform: translateY(-1px);
+  box-shadow: 0 6px 14px rgba(192, 0, 0, 0.3);
+}
+
+.btn-mng-outline {
+  background: #FFFFFF;
+  color: var(--mng-navy);
+  border: 1.5px solid var(--mng-navy);
+  border-radius: var(--mng-radius-sm);
+  padding: 11px;
+  font-size: 14px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: var(--mng-transition);
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+}
+
+.btn-mng-outline:hover {
+  background: var(--mng-navy);
+  color: #FFFFFF;
+}
+
+/* Modal Popup for Quotation Confirmation */
+.mng-modal-backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(15, 23, 42, 0.7);
+  backdrop-filter: blur(4px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 9999;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.3s ease;
+}
+
+.mng-modal-backdrop.active .mng-modal-box {
+  transform: translateY(0);
+}
