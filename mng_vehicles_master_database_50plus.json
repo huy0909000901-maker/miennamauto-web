@@ -1,0 +1,354 @@
+{
+  "last_updated": "2026-10-08",
+  "organization": "Miền Nam Group (MNG) - Miền Nam Auto",
+  "hotline": "0917071798",
+  "total_brands": 7,
+  "total_models": 26,
+  "total_configurations": 54,
+  "brands": {
+    "kim_long": {
+      "name": "KIM LONG MOTOR",
+      "origin": "Việt Nam (Linh kiện nhập khẩu cao cấp)",
+      "warranty": "5 năm hoặc 200.000 km",
+      "models": {
+        "kl_99_bus": {
+          "name": "Kim Long 99 (Xe Bus 29-34 Chỗ / 22 Phòng VIP)",
+          "type": "bus",
+          "payload_kg": 9900,
+          "engine": "Yuchai Euro 5 Turbo Diesel 240HP",
+          "dimensions_mm": "9.900 x 2.460 x 3.450",
+          "bodies": {
+            "chassis": { "name": "Chassis Sắt xi cơ sở", "price": 1850000000, "img": "https://images.unsplash.com/photo-1544620347-c4fd4a3d5957?w=600&auto=format&fit=crop&q=60" },
+            "ghe_ngoi_29": { "name": "29 Chỗ Ghế ngồi Cao cấp Universe", "price": 1980000000, "img": "https://images.unsplash.com/photo-1544620347-c4fd4a3d5957?w=600&auto=format&fit=crop&q=60" },
+            "ghe_ngoi_34": { "name": "34 Chỗ Ghế ngồi Tiêu chuẩn", "price": 2050000000, "img": "https://images.unsplash.com/photo-1544620347-c4fd4a3d5957?w=600&auto=format&fit=crop&q=60" },
+            "giuong_nam_22": { "name": "22 Phòng VIP Cung Điện Di Động", "price": 2450000000, "img": "https://images.unsplash.com/photo-1544620347-c4fd4a3d5957?w=600&auto=format&fit=crop&q=60" }
+          }
+        },
+        "kl_x9_minibus": {
+          "name": "Kim Long X9 (Minibus 16-19 Chỗ / Limousine)",
+          "type": "minibus",
+          "payload_kg": 3500,
+          "engine": "Yuchai Euro 5 150HP",
+          "dimensions_mm": "5.990 x 2.050 x 2.680",
+          "bodies": {
+            "tieu_chuan_16": { "name": "Bản Tiêu chuẩn 16 Chỗ", "price": 860000000, "img": "https://images.unsplash.com/photo-1570125909232-eb263c188f7e?w=600&auto=format&fit=crop&q=60" },
+            "tieu_chuan_19": { "name": "Bản Tiêu chuẩn 19 Chỗ", "price": 890000000, "img": "https://images.unsplash.com/photo-1570125909232-eb263c188f7e?w=600&auto=format&fit=crop&q=60" },
+            "limousine_10": { "name": "Bản Limousine VIP 10-12 Chỗ Thương Gia", "price": 1150000000, "img": "https://images.unsplash.com/photo-1570125909232-eb263c188f7e?w=600&auto=format&fit=crop&q=60" }
+          }
+        },
+        "kl_truck_light": {
+          "name": "Kim Long Truck 2.4 Tấn (Euro 5)",
+          "type": "truck",
+          "payload_kg": 2400,
+          "engine": "Yuchai Euro 5 140HP",
+          "dimensions_mm": "6.100 x 2.050 x 2.950",
+          "bodies": {
+            "chassis": { "name": "Chassis Sắt xi cơ sở", "price": 420000000, "img": "https://images.unsplash.com/photo-1601584115197-04ecc0da31d7?w=600&auto=format&fit=crop&q=60" },
+            "thung_bat": { "name": "Thùng Mui Bạt Dài 4m3", "price": 455000000, "img": "https://images.unsplash.com/photo-1601584115197-04ecc0da31d7?w=600&auto=format&fit=crop&q=60" },
+            "thung_kin": { "name": "Thùng Kín Inox 304", "price": 462000000, "img": "https://images.unsplash.com/photo-1601584115197-04ecc0da31d7?w=600&auto=format&fit=crop&q=60" },
+            "thung_dong_lanh": { "name": "Thùng Đông Lạnh Composite (-18°C)", "price": 580000000, "img": "https://images.unsplash.com/photo-1601584115197-04ecc0da31d7?w=600&auto=format&fit=crop&q=60" }
+          }
+        },
+        "kl_truck_heavy": {
+          "name": "Kim Long Heavy Truck 8.5 Tấn",
+          "type": "truck_heavy",
+          "payload_kg": 8500,
+          "engine": "Yuchai Euro 5 220HP",
+          "dimensions_mm": "9.850 x 2.500 x 3.550",
+          "bodies": {
+            "thung_bat": { "name": "Thùng Mui Bạt Dài 7m5 (9 Bửng)", "price": 890000000, "img": "https://images.unsplash.com/photo-1601584115197-04ecc0da31d7?w=600&auto=format&fit=crop&q=60" },
+            "thung_kin": { "name": "Thùng Kín Container Mở Cửa Hông", "price": 910000000, "img": "https://images.unsplash.com/photo-1601584115197-04ecc0da31d7?w=600&auto=format&fit=crop&q=60" }
+          }
+        }
+      }
+    },
+    "hyundai": {
+      "name": "HYUNDAI MIỀN NAM",
+      "origin": "Hàn Quốc (CKD Thành Công)",
+      "warranty": "3 năm hoặc 100.000 km",
+      "models": {
+        "h150": {
+          "name": "Hyundai New Porter H150 (1.49 Tấn)",
+          "type": "truck",
+          "payload_kg": 1490,
+          "engine": "Hyundai D4CB CRDi 130HP Euro 5",
+          "dimensions_mm": "5.240 x 1.760 x 2.650",
+          "bodies": {
+            "chassis": { "name": "Chassis Sắt xi cơ sở", "price": 375000000, "img": "https://images.unsplash.com/photo-1601584115197-04ecc0da31d7?w=600&auto=format&fit=crop&q=60" },
+            "thung_lung": { "name": "Thùng Lửng Nhà Máy", "price": 395000000, "img": "https://images.unsplash.com/photo-1601584115197-04ecc0da31d7?w=600&auto=format&fit=crop&q=60" },
+            "thung_bat": { "name": "Thùng Mui Bạt Bửng Nhôm Inox", "price": 405000000, "img": "https://images.unsplash.com/photo-1601584115197-04ecc0da31d7?w=600&auto=format&fit=crop&q=60" },
+            "thung_kin": { "name": "Thùng Kín Inox Cửa Hông", "price": 410000000, "img": "https://images.unsplash.com/photo-1601584115197-04ecc0da31d7?w=600&auto=format&fit=crop&q=60" },
+            "thung_dong_lanh": { "name": "Thùng Đông Lạnh H150 (-15°C)", "price": 520000000, "img": "https://images.unsplash.com/photo-1601584115197-04ecc0da31d7?w=600&auto=format&fit=crop&q=60" }
+          }
+        },
+        "n250sl": {
+          "name": "Hyundai Mighty N250SL (2.4 Tấn Thùng 4m3)",
+          "type": "truck",
+          "payload_kg": 2400,
+          "engine": "Hyundai D4CB 130HP Euro 5",
+          "dimensions_mm": "6.260 x 1.930 x 2.560",
+          "bodies": {
+            "thung_bat": { "name": "Thùng Mui Bạt Inox Dài 4.3m", "price": 525000000, "img": "https://images.unsplash.com/photo-1601584115197-04ecc0da31d7?w=600&auto=format&fit=crop&q=60" },
+            "thung_kin": { "name": "Thùng Kín Inox 3 Lớp 4.3m", "price": 532000000, "img": "https://images.unsplash.com/photo-1601584115197-04ecc0da31d7?w=600&auto=format&fit=crop&q=60" },
+            "bung_nang": { "name": "Thùng Bạt Bửng Nâng Thủy Lực", "price": 575000000, "img": "https://images.unsplash.com/photo-1601584115197-04ecc0da31d7?w=600&auto=format&fit=crop&q=60" }
+          }
+        },
+        "mighty_110sp": {
+          "name": "Hyundai Mighty 110SP (7 Tấn Động cơ F150)",
+          "type": "truck",
+          "payload_kg": 7000,
+          "engine": "Hyundai D4GA Euro 5 150HP",
+          "dimensions_mm": "6.880 x 2.200 x 2.970",
+          "bodies": {
+            "chassis": { "name": "Chassis Sắt xi cơ sở", "price": 685000000, "img": "https://images.unsplash.com/photo-1601584115197-04ecc0da31d7?w=600&auto=format&fit=crop&q=60" },
+            "thung_bat": { "name": "Thùng Mui Bạt 5 Bửng 5.0m", "price": 735000000, "img": "https://images.unsplash.com/photo-1601584115197-04ecc0da31d7?w=600&auto=format&fit=crop&q=60" },
+            "thung_kin": { "name": "Thùng Kín Inox Tiêu chuẩn", "price": 742000000, "img": "https://images.unsplash.com/photo-1601584115197-04ecc0da31d7?w=600&auto=format&fit=crop&q=60" }
+          }
+        },
+        "mighty_110xl": {
+          "name": "Hyundai Mighty 110XL (7 Tấn Thùng Dài 6m3)",
+          "type": "truck",
+          "payload_kg": 6800,
+          "engine": "Hyundai D4GA Euro 5 150HP",
+          "dimensions_mm": "8.150 x 2.200 x 2.970",
+          "bodies": {
+            "thung_bat": { "name": "Thùng Mui Bạt Dài 6.3m (7 Bửng)", "price": 785000000, "img": "https://images.unsplash.com/photo-1601584115197-04ecc0da31d7?w=600&auto=format&fit=crop&q=60" },
+            "thung_kin": { "name": "Thùng Kín Inox Dài 6.3m Cửa Hông", "price": 795000000, "img": "https://images.unsplash.com/photo-1601584115197-04ecc0da31d7?w=600&auto=format&fit=crop&q=60" }
+          }
+        },
+        "mighty_ex8_gt": {
+          "name": "Hyundai Mighty EX8 GTL (7.2 Tấn Vuông Thế Hệ Mới)",
+          "type": "truck",
+          "payload_kg": 7200,
+          "engine": "Hyundai D4CC Euro 5 160HP",
+          "dimensions_mm": "7.730 x 2.230 x 3.130",
+          "bodies": {
+            "thung_bat": { "name": "Thùng Mui Bạt 5.8m Inox", "price": 765000000, "img": "https://images.unsplash.com/photo-1601584115197-04ecc0da31d7?w=600&auto=format&fit=crop&q=60" },
+            "thung_kin": { "name": "Thùng Kín Inox 3 Lớp 5.8m", "price": 775000000, "img": "https://images.unsplash.com/photo-1601584115197-04ecc0da31d7?w=600&auto=format&fit=crop&q=60" }
+          }
+        },
+        "hyundai_hd1000": {
+          "name": "Hyundai HD1000 (Đầu Kéo 410HP Hàn Quốc)",
+          "type": "tractor",
+          "payload_kg": 38500,
+          "engine": "Hyundai D6CC Euro 5 410HP",
+          "dimensions_mm": "6.685 x 2.495 x 3.130",
+          "bodies": {
+            "dau_keo": { "name": "Đầu Kéo 6x4 2 Cầu Thật", "price": 2150000000, "img": "https://images.unsplash.com/photo-1601584115197-04ecc0da31d7?w=600&auto=format&fit=crop&q=60" }
+          }
+        }
+      }
+    },
+    "jac": {
+      "name": "JAC MOTORS",
+      "origin": "Lắp ráp CKD Quốc tế",
+      "warranty": "5 năm hoặc 150.000 km",
+      "models": {
+        "jac_n200s": {
+          "name": "JAC N200S (1.99 Tấn Động cơ Cummins)",
+          "type": "truck",
+          "payload_kg": 1990,
+          "engine": "Cummins HFC4DE1-1D Euro 5 120HP",
+          "dimensions_mm": "6.240 x 1.960 x 2.800",
+          "bodies": {
+            "thung_bat": { "name": "Thùng Mui Bạt Dài 4.38m", "price": 425000000, "img": "https://images.unsplash.com/photo-1601584115197-04ecc0da31d7?w=600&auto=format&fit=crop&q=60" },
+            "thung_kin": { "name": "Thùng Kín Inox Cửa Hông 4.38m", "price": 430000000, "img": "https://images.unsplash.com/photo-1601584115197-04ecc0da31d7?w=600&auto=format&fit=crop&q=60" }
+          }
+        },
+        "jac_n350_plus": {
+          "name": "JAC N350 Plus (3.49 Tấn Thùng 5m25)",
+          "type": "truck",
+          "payload_kg": 3490,
+          "engine": "Cummins Euro 5 155HP",
+          "dimensions_mm": "7.180 x 2.260 x 3.150",
+          "bodies": {
+            "thung_bat": { "name": "Thùng Mui Bạt Mở 5 Bửng 5.25m", "price": 535000000, "img": "https://images.unsplash.com/photo-1601584115197-04ecc0da31d7?w=600&auto=format&fit=crop&q=60" },
+            "thung_kin": { "name": "Thùng Kín Container Chống Nước 5.25m", "price": 542000000, "img": "https://images.unsplash.com/photo-1601584115197-04ecc0da31d7?w=600&auto=format&fit=crop&q=60" }
+          }
+        },
+        "jac_n650_plus": {
+          "name": "JAC N650 Plus (6.5 Tấn Thùng 6m2)",
+          "type": "truck",
+          "payload_kg": 6500,
+          "engine": "Cummins ISF3.8s4R168 Euro 5 170HP",
+          "dimensions_mm": "8.405 x 2.280 x 3.280",
+          "bodies": {
+            "thung_bat": { "name": "Thùng Mui Bạt 7 Bửng 6.2m", "price": 645000000, "img": "https://images.unsplash.com/photo-1601584115197-04ecc0da31d7?w=600&auto=format&fit=crop&q=60" },
+            "thung_kin": { "name": "Thùng Kín Inox 6.2m", "price": 655000000, "img": "https://images.unsplash.com/photo-1601584115197-04ecc0da31d7?w=600&auto=format&fit=crop&q=60" }
+          }
+        },
+        "jac_n800_plus": {
+          "name": "JAC N800 Plus (8.4 Tấn Thùng 7m6)",
+          "type": "truck_heavy",
+          "payload_kg": 8400,
+          "engine": "Cummins ISF3.8s4R168 Euro 5 170HP",
+          "dimensions_mm": "9.800 x 2.420 x 3.520",
+          "bodies": {
+            "thung_bat": { "name": "Thùng Mui Bạt Nhôm Inox 7.6m", "price": 725000000, "img": "https://images.unsplash.com/photo-1601584115197-04ecc0da31d7?w=600&auto=format&fit=crop&q=60" },
+            "thung_kin": { "name": "Thùng Kín Pallet Chở Điện Tử 7.6m", "price": 745000000, "img": "https://images.unsplash.com/photo-1601584115197-04ecc0da31d7?w=600&auto=format&fit=crop&q=60" }
+          }
+        },
+        "jac_n900_plus": {
+          "name": "JAC N900 Plus (9.1 Tấn Thùng 7m)",
+          "type": "truck_heavy",
+          "payload_kg": 9100,
+          "engine": "Cummins Euro 5 170HP",
+          "dimensions_mm": "9.235 x 2.420 x 3.460",
+          "bodies": {
+            "thung_bat": { "name": "Thùng Mui Bạt 7.0m", "price": 735000000, "img": "https://images.unsplash.com/photo-1601584115197-04ecc0da31d7?w=600&auto=format&fit=crop&q=60" },
+            "thung_kin": { "name": "Thùng Kín Tiêu chuẩn 7.0m", "price": 750000000, "img": "https://images.unsplash.com/photo-1601584115197-04ecc0da31d7?w=600&auto=format&fit=crop&q=60" }
+          }
+        }
+      }
+    },
+    "teraco": {
+      "name": "TERACO (Daehan Motors)",
+      "origin": "Hàn Quốc / Việt Nam",
+      "warranty": "3 năm hoặc 100.000 km",
+      "models": {
+        "tera_100": {
+          "name": "Tera 100 (990kg Động cơ Mitsubishi)",
+          "type": "van_light",
+          "payload_kg": 990,
+          "engine": "Mitsubishi 4G13S1 Xăng 100HP Euro 5",
+          "dimensions_mm": "4.820 x 1.700 x 2.370",
+          "bodies": {
+            "thung_lung": { "name": "Thùng Lửng 2.75m", "price": 235000000, "img": "https://images.unsplash.com/photo-1601584115197-04ecc0da31d7?w=600&auto=format&fit=crop&q=60" },
+            "thung_bat": { "name": "Thùng Mui Bạt Tiêu chuẩn 2.8m", "price": 247000000, "img": "https://images.unsplash.com/photo-1601584115197-04ecc0da31d7?w=600&auto=format&fit=crop&q=60" },
+            "thung_kin": { "name": "Thùng Kín Cửa Hông Inox 2.8m", "price": 252000000, "img": "https://images.unsplash.com/photo-1601584115197-04ecc0da31d7?w=600&auto=format&fit=crop&q=60" }
+          }
+        },
+        "tera_star": {
+          "name": "Tera Star / Star+ (1.25T - 1.9T GDI Turbo)",
+          "type": "truck",
+          "payload_kg": 1900,
+          "engine": "GDI Xăng 1.5L Turbo 116HP Euro 5",
+          "dimensions_mm": "5.150 x 1.750 x 2.500",
+          "bodies": {
+            "thung_bat": { "name": "Thùng Mui Bạt Dài 3.05m", "price": 258000000, "img": "https://images.unsplash.com/photo-1601584115197-04ecc0da31d7?w=600&auto=format&fit=crop&q=60" },
+            "thung_kin": { "name": "Thùng Kín Inox Dập Sóng 3.05m", "price": 265000000, "img": "https://images.unsplash.com/photo-1601584115197-04ecc0da31d7?w=600&auto=format&fit=crop&q=60" }
+          }
+        },
+        "tera_v6": {
+          "name": "Tera-V6 (Xe Tải Van 2 Chỗ / 5 Chỗ Vào Phố 24/7)",
+          "type": "van",
+          "payload_kg": 945,
+          "engine": "GDI Xăng 1.5L 116HP Euro 5",
+          "dimensions_mm": "4.550 x 1.710 x 1.970",
+          "bodies": {
+            "van_2_cho": { "name": "Van 2 Chỗ (Tải 945kg Thùng 2.5m)", "price": 325000000, "img": "https://images.unsplash.com/photo-1570125909232-eb263c188f7e?w=600&auto=format&fit=crop&q=60" },
+            "van_5_cho": { "name": "Van 5 Chỗ (Tải 790kg Thùng 1.6m)", "price": 365000000, "img": "https://images.unsplash.com/photo-1570125909232-eb263c188f7e?w=600&auto=format&fit=crop&q=60" }
+          }
+        },
+        "tera_180": {
+          "name": "Tera 180 (1.8 Tấn Máy Dầu Isuzu Thùng 3m3)",
+          "type": "truck",
+          "payload_kg": 1800,
+          "engine": "4A1-68C40 Diesel 1.8L Euro 5 68HP",
+          "dimensions_mm": "5.330 x 1.750 x 2.430",
+          "bodies": {
+            "thung_bat": { "name": "Thùng Mui Bạt Inox 3.3m", "price": 335000000, "img": "https://images.unsplash.com/photo-1601584115197-04ecc0da31d7?w=600&auto=format&fit=crop&q=60" },
+            "thung_kin": { "name": "Thùng Kín Inox 3.3m Cửa Hông", "price": 342000000, "img": "https://images.unsplash.com/photo-1601584115197-04ecc0da31d7?w=600&auto=format&fit=crop&q=60" }
+          }
+        }
+      }
+    },
+    "srm": {
+      "name": "SRM (Shineray Motors)",
+      "origin": "Liên Doanh Shineray",
+      "warranty": "5 năm hoặc 150.000 km",
+      "models": {
+        "srm_868": {
+          "name": "SRM 868 (Xe Tải Van Cao Cấp 2 Chỗ 868kg)",
+          "type": "van",
+          "payload_kg": 868,
+          "engine": "SWD16M Xăng 1.6L 115HP Euro 5",
+          "dimensions_mm": "4.500 x 1.710 x 2.000",
+          "bodies": {
+            "van_2_cho": { "name": "Bản Tiêu Chuẩn Màn Hình Android 2.5m", "price": 330000000, "img": "https://images.unsplash.com/photo-1570125909232-eb263c188f7e?w=600&auto=format&fit=crop&q=60" }
+          }
+        },
+        "srm_t30": {
+          "name": "SRM T30 (Xe Tải 1.25 Tấn Thùng 2m9)",
+          "type": "truck",
+          "payload_kg": 1250,
+          "engine": "DLCG14 Xăng 1.5L 109HP Euro 5",
+          "dimensions_mm": "5.000 x 1.780 x 2.450",
+          "bodies": {
+            "thung_bat": { "name": "Thùng Mui Bạt 2.9m", "price": 218000000, "img": "https://images.unsplash.com/photo-1601584115197-04ecc0da31d7?w=600&auto=format&fit=crop&q=60" },
+            "thung_kin": { "name": "Thùng Kín Inox 2.9m", "price": 225000000, "img": "https://images.unsplash.com/photo-1601584115197-04ecc0da31d7?w=600&auto=format&fit=crop&q=60" }
+          }
+        },
+        "srm_k9": {
+          "name": "SRM K9 (Xe Tải Nhẹ 990kg Siêu Tiết Kiệm)",
+          "type": "van_light",
+          "payload_kg": 990,
+          "engine": "SWB11M Xăng 1.1L Euro 5 62HP",
+          "dimensions_mm": "4.260 x 1.550 x 2.255",
+          "bodies": {
+            "thung_bat": { "name": "Thùng Mui Bạt 2.45m", "price": 175000000, "img": "https://images.unsplash.com/photo-1601584115197-04ecc0da31d7?w=600&auto=format&fit=crop&q=60" },
+            "thung_kin": { "name": "Thùng Kín Inox 2.45m", "price": 182000000, "img": "https://images.unsplash.com/photo-1601584115197-04ecc0da31d7?w=600&auto=format&fit=crop&q=60" }
+          }
+        }
+      }
+    },
+    "chenglong": {
+      "name": "CHENGLONG (Hải Âu)",
+      "origin": "Nhập Khẩu Nguyên Chiếc",
+      "warranty": "3 năm hoặc 100.000 km",
+      "models": {
+        "chenglong_h7_tractor": {
+          "name": "Chenglong H7 (Đầu Kéo 420HP / 480HP King Power)",
+          "type": "tractor",
+          "payload_kg": 39500,
+          "engine": "Yuchai YC6MK420-50 Euro 5 420HP",
+          "dimensions_mm": "6.890 x 2.495 x 3.950",
+          "bodies": {
+            "dau_keo_420": { "name": "Đầu Kéo H7 420HP Cầu Láp (6x4)", "price": 1280000000, "img": "https://images.unsplash.com/photo-1601584115197-04ecc0da31d7?w=600&auto=format&fit=crop&q=60" },
+            "dau_keo_480": { "name": "Đầu Kéo H7 480HP Cầu Dầu Siêu Tải", "price": 1390000000, "img": "https://images.unsplash.com/photo-1601584115197-04ecc0da31d7?w=600&auto=format&fit=crop&q=60" }
+          }
+        },
+        "chenglong_m3_truck": {
+          "name": "Chenglong M3 (8.5 Tấn Thùng Siêu Dài 9m9)",
+          "type": "truck_heavy",
+          "payload_kg": 8500,
+          "engine": "Yuchai Euro 5 200HP 6 Máy",
+          "dimensions_mm": "12.080 x 2.500 x 3.750",
+          "bodies": {
+            "thung_bat_9m9": { "name": "Thùng Mui Bạt Nhôm Inox 9.9m (9 Bửng)", "price": 990000000, "img": "https://images.unsplash.com/photo-1601584115197-04ecc0da31d7?w=600&auto=format&fit=crop&q=60" },
+            "thung_kin_pallet": { "name": "Thùng Kín Pallet Chở Bao Bì Điện Tử 9.9m", "price": 1040000000, "img": "https://images.unsplash.com/photo-1601584115197-04ecc0da31d7?w=600&auto=format&fit=crop&q=60" }
+          }
+        }
+      }
+    },
+    "howo": {
+      "name": "HOWO SINOTRUK",
+      "origin": "Nhập Khẩu Nguyên Chiếc",
+      "warranty": "3 năm hoặc 100.000 km",
+      "models": {
+        "howo_max_tractor": {
+          "name": "Howo MAX (Đầu Kéo MAN 460HP Siêu Tiết Kiệm)",
+          "type": "tractor",
+          "payload_kg": 40000,
+          "engine": "Công nghệ MAN MC11.46-50 Euro 5 460HP",
+          "dimensions_mm": "6.985 x 2.496 x 3.950",
+          "bodies": {
+            "dau_keo_cau_lap": { "name": "Đầu Kéo Howo MAX 460HP Cầu Láp MAN", "price": 1360000000, "img": "https://images.unsplash.com/photo-1601584115197-04ecc0da31d7?w=600&auto=format&fit=crop&q=60" },
+            "dau_keo_cau_dau": { "name": "Đầu Kéo Howo MAX 460HP Cầu Dầu MAN", "price": 1420000000, "img": "https://images.unsplash.com/photo-1601584115197-04ecc0da31d7?w=600&auto=format&fit=crop&q=60" }
+          }
+        },
+        "howo_tx_dump": {
+          "name": "Howo TX D600 (Xe Ben 4 Chân 380HP Thùng Vuông/Đúc)",
+          "type": "dump_truck",
+          "payload_kg": 16000,
+          "engine": "Weichai WP10.380E53 Euro 5 380HP",
+          "dimensions_mm": "9.050 x 2.500 x 3.450",
+          "bodies": {
+            "thung_duc": { "name": "Thùng Đúc Đáy 8mm Thành 6mm Thép K450", "price": 1520000000, "img": "https://images.unsplash.com/photo-1601584115197-04ecc0da31d7?w=600&auto=format&fit=crop&q=60" },
+            "thung_vuong": { "name": "Thùng Vuông Đáy 10mm Thành 8mm Chở Quặng", "price": 1560000000, "img": "https://images.unsplash.com/photo-1601584115197-04ecc0da31d7?w=600&auto=format&fit=crop&q=60" }
+          }
+        }
+      }
+    }
+  }
+}
