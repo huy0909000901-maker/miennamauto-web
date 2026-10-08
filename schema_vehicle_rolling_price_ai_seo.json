@@ -1,0 +1,163 @@
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "AutoDealer",
+      "@id": "https://miennamauto.vn/#organization",
+      "name": "Miền Nam Auto - Tập Đoàn Miền Nam (MNG)",
+      "url": "https://miennamauto.vn",
+      "logo": "https://drive.google.com/open?id=1kj_ZltrHkVBdrMi-8FSY_OLxmcjYoMwk",
+      "image": "https://miennamauto.vn/assets/showroom-miennamgroup.jpg",
+      "description": "Tổng đại lý phân phối chính hãng xe thương mại Kim Long Motor, Hyundai Miền Nam, JAC, Teraco, SRM hàng đầu Việt Nam. Dịch vụ đóng thùng theo yêu cầu, hỗ trợ vay 85%, giao xe tận nơi.",
+      "telephone": "+84917071798",
+      "email": "huy.nguyen@miennamgroup.vn",
+      "priceRange": "$$$",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Đại Lộ Bình Dương / Quốc Lộ 13",
+        "addressLocality": "TP. Thuận An",
+        "addressRegion": "Bình Dương",
+        "addressCountry": "VN"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": 10.9328,
+        "longitude": 106.7001
+      },
+      "openingHoursSpecification": [
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"],
+          "opens": "07:30",
+          "closes": "18:00"
+        }
+      ]
+    },
+    {
+      "@type": "BreadcrumbList",
+      "@id": "https://miennamauto.vn/xe-tai/hyundai/new-porter-h150#breadcrumb",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Trang Chủ",
+          "item": "https://miennamauto.vn"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Xe Thương Mại",
+          "item": "https://miennamauto.vn/xe-thuong-mai"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "Hyundai Miền Nam",
+          "item": "https://miennamauto.vn/xe-tai/hyundai"
+        },
+        {
+          "@type": "ListItem",
+          "position": 4,
+          "name": "Hyundai New Porter H150 Thùng Bạt",
+          "item": "https://miennamauto.vn/xe-tai/hyundai/new-porter-h150"
+        }
+      ]
+    },
+    {
+      "@type": ["Vehicle", "Product"],
+      "@id": "https://miennamauto.vn/xe-tai/hyundai/new-porter-h150#vehicle",
+      "name": "Xe Tải Hyundai New Porter H150 Thùng Mui Bạt 1.49 Tấn",
+      "description": "Xe tải Hyundai H150 tải trọng 1.490 kg, động cơ D4CB Turbo Diesel Euro 5 công suất 130 mã lực, kích thước thùng hàng 3.130 x 1.630 x 1.770 mm. Đầy đủ bảng dự toán giá lăn bánh 63 tỉnh thành phố.",
+      "image": [
+        "https://images.unsplash.com/photo-1601584115197-04ecc0da31d7?w=1200&auto=format&fit=crop&q=80"
+      ],
+      "brand": {
+        "@type": "Brand",
+        "name": "Hyundai Thành Công Thương Mại (HTCV)"
+      },
+      "manufacturer": {
+        "@type": "Organization",
+        "name": "Hyundai Miền Nam - Đại Lý Ủy Quyền Tập Đoàn Miền Nam"
+      },
+      "vehicleModelDate": "2026",
+      "model": "New Porter H150",
+      "bodyType": "Thùng Mui Bạt Bửng Nhôm Inox",
+      "vehicleTransmission": "Số sàn 6 cấp (6 MT)",
+      "fuelType": "Diesel Euro 5",
+      "payload": "1490 kg",
+      "numberOfDoors": 2,
+      "seatingCapacity": 3,
+      "vehicleEngine": {
+        "@type": "EngineSpecification",
+        "name": "Hyundai D4CB CRDi",
+        "engineDisplacement": {
+          "@type": "QuantitativeValue",
+          "value": 2497,
+          "unitCode": "CMQ"
+        },
+        "enginePower": {
+          "@type": "QuantitativeValue",
+          "value": 130,
+          "unitText": "Mã Lực (HP) tại 3.800 vòng/phút"
+        }
+      },
+      "offers": {
+        "@type": "Offer",
+        "url": "https://miennamauto.vn/xe-tai/hyundai/new-porter-h150",
+        "priceCurrency": "VND",
+        "price": "405000000",
+        "priceValidUntil": "2026-12-31",
+        "itemCondition": "https://schema.org/NewCondition",
+        "availability": "https://schema.org/InStock",
+        "seller": {
+          "@id": "https://miennamauto.vn/#organization"
+        },
+        "priceSpecification": [
+          {
+            "@type": "UnitPriceSpecification",
+            "name": "Giá Xuất Hóa Đơn Niêm Yết (VAT)",
+            "price": "405000000",
+            "priceCurrency": "VND",
+            "valueAddedTaxIncluded": true
+          },
+          {
+            "@type": "UnitPriceSpecification",
+            "name": "Ước Tính Giá Lăn Bánh Trọn Gói TP.HCM (Trước bạ 2% + Phí biển + Phí đường bộ + Đăng kiểm + Bảo hiểm TNDS)",
+            "price": "418086300",
+            "priceCurrency": "VND"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "FAQPage",
+      "@id": "https://miennamauto.vn/xe-tai/hyundai/new-porter-h150#faq",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Lệ phí trước bạ xe tải Hyundai H150 và các dòng xe thương mại năm 2026 là bao nhiêu?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Theo quy định pháp luật Việt Nam hiện hành, thuế trước bạ đối với xe ô tô tải, ô tô van và xe chuyên dùng được áp dụng mức cố định là 2% trên giá trị xuất hóa đơn GTGT, khác với xe du lịch con (chịu 10% - 12%)."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Mua xe thương mại tại Miền Nam Auto có được hỗ trợ vay ngân hàng 85% không?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Miền Nam Auto liên kết trực tiếp với các ngân hàng lớn (Vietcombank, BIDV, VPBank, TPBank, Sacombank) hỗ trợ vay tối đa đến 85% giá trị xe trong thời gian từ 1 đến 7 năm, thủ tục duyệt hồ sơ nhanh trong 24 giờ kể cả khách hàng chưa có chứng minh thu nhập phức tạp."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Phí biển số xe tải tại TP.HCM và các tỉnh khác chênh lệch như thế nào?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Tại TP.HCM và Hà Nội (Khu vực 1), lệ phí cấp biển số xe ô tô tải là 500.000 VNĐ. Tại tất cả các tỉnh thành và thị xã khác (Khu vực 2 và 3), phí cấp biển số chỉ 150.000 VNĐ."
+          }
+        }
+      ]
+    }
+  ]
+}
