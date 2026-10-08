@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bảng Dự Toán Chi Phí Lăn Bánh Xe Thương Mại 63 Tỉnh Thành & Bộ Chọn Xe 3 Cấp | Miền Nam Auto</title>
+  <meta name="description" content="Hệ thống tự động tính chi phí giá lăn bánh xe tải, xe ben, xe đầu kéo, xe bus Kim Long, Hyundai, JAC, Teraco, SRM chính xác 63 tỉnh thành phố. Hỗ trợ vay trả góp 85%.">
+  <link rel="stylesheet" href="./commercial_calculator.css">
+</head>
+<body>
+
+  <div class="mng-container">
+    <!-- Header Banner -->
+    <header class="mng-calc-header">
+      <h1>
+        Dự Toán Chi Phí Lăn Bánh Xe Thương Mại
+        <span class="badge">63 Tỉnh Thành</span>
+      </h1>
+      <p>
+        Công cụ tính toán minh bạch 100% lệ phí trước bạ (2%), định mức phí bảo trì đường bộ theo tải trọng, phí biển số và phương án vay trả góp 85% tối ưu cho khách hàng & doanh nghiệp vận tải.
+      </p>
+    </header>
+
+    <!-- Main Layout -->
+    <main class="mng-calc-layout">
+      <!-- Left Column: Input Form & Cascader Selector -->
+      <section class="calc-inputs-section">
+        
+        <!-- Step 1: Bộ Chọn Xe 3 Cấp (Cascader Picker) -->
+        <div class="mng-card">
+          <div class="mng-card-title">
+            <span><span class="step-pill">1</span> Chọn Hãng Xe & Dòng Xe Cần Tính</span>
+            <small style="font-size: 13px; color: var(--mng-navy-light); font-weight: 600;">Miền Nam Auto Phân Phối Chính Hãng</small>
+          </div>
+
+          <div class="mng-cascader-grid">
+            <div class="form-group">
+              <label for="select-brand">Hãng Sản Xuất <span class="req">*</span></label>
+              <select id="select-brand" class="form-select">
+                <!-- Dynamic via JS -->
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label for="select-model">Dòng Xe (Model) <span class="req">*</span></label>
+              <select id="select-model" class="form-select">
+                <!-- Dynamic via JS -->
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label for="select-body">Quy Cách Thùng <span class="req">*</span></label>
+              <select id="select-body" class="form-select">
+                <!-- Dynamic via JS -->
+              </select>
+            </div>
+          </div>
+
+          <!-- Vehicle Visual Preview Box -->
+          <div class="vehicle-preview-box">
+            <img id="preview-thumb" class="vehicle-thumb" src="" alt="Hình ảnh xe">
+            <div class="vehicle-details">
+              <h3 id="preview-title">Đang tải thông tin xe...</h3>
+              <div class="spec-tags">
+                <span class="tag" id="preview-spec">Tải trọng: Đang cập nhật</span>
+                <span class="tag" style="background:#FEF3C7; color:#92400E;">Tiêu Chuẩn Khí Thải Euro 5</span>
+              </div>
+              <div class="base-price">Giá niêm yết: <span id="preview-price">0 VNĐ</span></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Step 2: Nơi Đăng Ký & Các Dịch Vụ Đi Kèm -->
+        <div class="mng-card">
+          <div class="mng-card-title">
+            <span><span class="step-pill">2</span> Nơi Đăng Ký & Dịch Vụ Đi Kèm</span>
+          </div>
+
+          <div class="calc-parameters-grid">
+            <div class="form-group">
+              <label for="select-province">Tỉnh / Thành Phố Đăng Ký Biển Số <span class="req">*</span></label>
+              <select id="select-province" class="form-select">
+                <!-- 63 Provinces populated via JS -->
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label for="select-purpose">Mục Đích Sử Dụng</label>
+              <select id="select-purpose" class="form-select">
+                <option value="business" selected>Kinh doanh vận tải (Biển vàng)</option>
+                <option value="private">Cá nhân / Doanh nghiệp nội bộ (Biển trắng)</option>
+              </select>
+            </div>
+          </div>
+
+          <!-- Additional Options -->
+          <div class="option-checks">
+            <label class="checkbox-pill">
+              <div class="pill-label">
+                <input type="checkbox" id="opt-body-ins" checked>
+                <span>Bảo hiểm vật chất / thân vỏ 1 năm (Khuyến nghị vay ngân hàng)</span>
+              </div>
+              <span class="pill-price">1.5% Giá xe</span>
+            </label>
+
+            <label class="checkbox-pill">
+              <div class="pill-label">
+                <input type="checkbox" id="opt-reg-service" checked>
+                <span>Dịch vụ đăng ký trọn gói & Cà số khung số máy tận nơi</span>
+              </div>
+              <span class="pill-price">3.500.000 VNĐ</span>
+            </label>
+
+            <label class="checkbox-pill">
+              <div class="pill-label">
+                <input type="checkbox" id="opt-gps-promo" checked disabled>
+                <span>Tặng gói Định vị GPS 4G + Phù hiệu Hợp tác xã 1 năm (Ưu đãi MNG)</span>
+              </div>
+              <span class="pill-price" style="color: var(--mng-success);">0 VNĐ (Tặng kèm)</span>
+            </label>
+          </div>
+
+          <!-- Step 3: Tính Toán Vay Trả Góp 85% -->
+          <div class="loan-calculator-box">
+            <div class="loan-toggle-header">
+              <label for="enable-loan">
+                <input type="checkbox" id="enable-loan" checked>
+                Dự toán phương án vay mua xe trả góp (Ngân hàng đối tác MNG)
+              </label>
+            </div>
+
+            <div class="loan-slider-group">
+              <div class="slider-header">
+                <span>Tỷ lệ vay vốn:</span>
+                <span id="loan-ratio-val" style="color: var(--mng-red); font-weight: 700;">80%</span>
+              </div>
+              <input type="range" id="loan-ratio" min="50" max="85" step="5" value="80">
+            </div>
+
+            <div class="loan-slider-group">
+              <div class="slider-header">
+                <span>Thời hạn vay:</span>
+                <span id="loan-tenure-val" style="color: var(--mng-navy); font-weight: 700;">5 năm (60 tháng)</span>
+              </div>
+              <input type="range" id="loan-tenure" min="1" max="7" step="1" value="5">
+            </div>
+            <small style="color: var(--mng-text-muted); font-size: 12px; display: block; margin-top: 4px;">
+              * Lãi suất ưu đãi cố định 8.5%/năm năm đầu áp dụng theo chương trình liên kết tài chính Miền Nam Group với Vietcombank, VPBank, TPBank, BIDV.
+            </small>
+          </div>
+        </div>
+
+      </section>
+
+      <!-- Right Column: Sticky Summary Pricing Sheet -->
+      <aside class="calc-summary-section">
+        <div class="mng-summary-card">
+          <div class="summary-header">
+            <h2>DỰ TOÁN CHI PHÍ LĂN BÁNH</h2>
+            <div class="summary-location">Khu vực đăng ký: <strong id="res-province-name" style="color: var(--mng-navy);">TP. Hồ Chí Minh</strong></div>
+          </div>
+
+          <ul class="cost-breakdown-list">
+            <li class="cost-row main-item">
+              <div>
+                1. Giá xe niêm yết (Đã gồm VAT)
+                <span class="item-note">Giá xuất hóa đơn nhà máy</span>
+              </div>
+              <span class="cost-val" id="res-base-price">0 VNĐ</span>
+            </li>
+
+            <li class="cost-row">
+              <div>
+                2. Lệ phí trước bạ (2%)
+                <span class="item-note">Nộp kho bạc nhà nước</span>
+              </div>
+              <span class="cost-val" id="res-reg-tax">0 VNĐ</span>
+            </li>
+
+            <li class="cost-row">
+              <div>
+                3. Phí cấp biển số xe
+                <span class="item-note">Theo khu vực quản lý</span>
+              </div>
+              <span class="cost-val" id="res-plate-fee">0 VNĐ</span>
+            </li>
+
+            <li class="cost-row">
+              <div>
+                4. Phí kiểm định đăng kiểm
+                <span class="item-note">Theo nhóm tải trọng xe</span>
+              </div>
+              <span class="cost-val" id="res-inspection-fee">0 VNĐ</span>
+            </li>
+
+            <li class="cost-row">
+              <div>
+                5. Phí bảo trì đường bộ (1 năm)
+                <span class="item-note">Định mức 12 tháng</span>
+              </div>
+              <span class="cost-val" id="res-road-fee">0 VNĐ</span>
+            </li>
+
+            <li class="cost-row">
+              <div>
+                6. Bảo hiểm TNDS bắt buộc (1 năm)
+                <span class="item-note">Kèm bảo hiểm người ngồi</span>
+              </div>
+              <span class="cost-val" id="res-tnds-fee">0 VNĐ</span>
+            </li>
+
+            <li class="cost-row">
+              <div>
+                7. Bảo hiểm vật chất xe (1.5%)
+                <span class="item-note">Bảo hiểm thân vỏ toàn diện</span>
+              </div>
+              <span class="cost-val" id="res-body-ins">0 VNĐ</span>
+            </li>
+
+            <li class="cost-row">
+              <div>
+                8. Dịch vụ đăng ký đăng kiểm
+                <span class="item-note">Trọn gói tận nơi</span>
+              </div>
+              <span class="cost-val" id="res-reg-service">0 VNĐ</span>
+            </li>
+
+            <li class="cost-row discount">
+              <div>
+                9. Gói Phù hiệu & Định vị GPS 4G
+                <span class="item-note">Khuyến mại Miền Nam Auto</span>
+              </div>
+              <span class="cost-val">MIỄN PHÍ</span>
+            </li>
+          </ul>
+
+          <!-- Grand Total Hero Box -->
+          <div class="total-price-hero">
+            <div class="label">TỔNG CHI PHÍ LĂN BÁNH TRỌN GÓI</div>
+            <div class="price-number" id="res-total-price">0 VNĐ</div>
+            <div class="vat-note">Đã bao gồm tất cả các khoản thuế, phí và hóa đơn GTGT</div>
+          </div>
+
+          <!-- Loan Breakdown Box (If Enabled) -->
+          <div class="loan-estimate-box" id="loan-breakdown-result">
+            <div class="loan-title">
+              <span>💳 PHƯƠNG ÁN MUA TRẢ GÓP</span>
+              <span style="font-size: 12px; font-weight: normal;">Duyệt hồ sơ 24h</span>
+            </div>
+            <div class="loan-grid-res">
+              <div class="loan-res-item">
+                <span class="l-lbl">Ngân hàng cho vay:</span>
+                <span class="l-val" id="loan-res-max">0 VNĐ</span>
+              </div>
+              <div class="loan-res-item">
+                <span class="l-lbl">Vốn tự có cần trả trước:</span>
+                <span class="l-val" id="loan-res-upfront" style="color: var(--mng-red);">0 VNĐ</span>
+              </div>
+              <div class="loan-res-item" style="grid-column: span 2; margin-top: 6px; padding-top: 6px; border-top: 1px dashed rgba(192, 0, 0, 0.2);">
+                <span class="l-lbl">Ước tính trả hàng tháng (Gốc + Lãi khởi điểm):</span>
+                <span class="l-val" id="loan-res-monthly" style="color: var(--mng-navy); font-size: 16px;">0 VNĐ/tháng</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- CTA Buttons -->
+          <div class="cta-actions-group">
+            <button class="btn-mng-primary" onclick="requestQuoteModal()">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+              NHẬN BÁO GIÁ LĂN BÁNH TẬN TAY
+            </button>
+            <a href="https://zalo.me/0917071798" target="_blank" class="btn-mng-outline">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path></svg>
+              Tư Vấn Nhanh Qua Zalo (0917 071 798)
+            </a>
+          </div>
+
+        </div>
+      </aside>
+    </main>
+  </div>
+
+  <!-- Modal Form Nhận Báo Giá -->
+  <div class="mng-modal-backdrop" id="quote-modal" onclick="if(event.target === this) closeQuoteModal()">
+    <div class="mng-modal-box">
+      <h3 style="color: var(--mng-navy); font-size: 20px; font-weight: 700; margin-bottom: 8px;">Gửi Bảng Báo Giá Chi Tiết</h3>
+      <p style="color: var(--mng-text-muted); font-size: 14px; margin-bottom: 20px;">Hệ thống tư vấn viên Miền Nam Auto sẽ liên hệ gửi bảng tính chi tiết có dấu mộc và hỗ trợ lái thử tận nhà trong 15 phút.</p>
+      
+      <form onsubmit="event.preventDefault(); alert('Cảm ơn Quý khách! Chuyên viên tư vấn Miền Nam Group sẽ gửi bảng dự toán qua Zalo ngay.'); closeQuoteModal();">
+        <div class="form-group" style="margin-bottom: 12px;">
+          <label>Họ và tên <span class="req">*</span></label>
+          <input type="text" class="form-control" placeholder="Ví dụ: Nguyễn Văn A" required>
+        </div>
+        <div class="form-group" style="margin-bottom: 12px;">
+          <label>Số điện thoại / Zalo <span class="req">*</span></label>
+          <input type="tel" class="form-control" placeholder="Ví dụ: 0917 xxx xxx" required>
+        </div>
+        <div class="form-group" style="margin-bottom: 20px;">
+          <label>Địa chỉ nhận xe (Tỉnh/Thành)</label>
+          <input type="text" class="form-control" placeholder="Ví dụ: TP.HCM, Bình Dương, Long An...">
+        </div>
+
+        <div style="display: flex; gap: 10px; justify-content: flex-end;">
+          <button type="button" class="btn-mng-outline" style="padding: 10px 18px;" onclick="closeQuoteModal()">Đóng</button>
+          <button type="submit" class="btn-mng-primary" style="padding: 10px 22px;">Gửi Yêu Cầu</button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <script src="./commercial_calculator.js"></script>
+</body>
+</html>
